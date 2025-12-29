@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aimugshotcreator | AI Mugshot Maker</title>
+    <meta name="description" content="Ever wonder what you d look like in a mugshot? Our AI generator makes it easy. Upload a selfie and create a funny, shareable fake mugshot today.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AI Mugshot Maker: Turn Your Photo Into a Mugshot Free">
+    <meta property="og:description" content="Ever wonder what you d look like in a mugshot? Our AI generator makes it easy. Upload a selfie and create a funny, shareable fake mugshot today.">
+    <meta property="og:image" content="images/hero-bg.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="AI Mugshot Maker: Turn Your Photo Into a Mugshot Free">
+    <meta property="twitter:description" content="Ever wonder what you d look like in a mugshot? Our AI generator makes it easy. Upload a selfie and create a funny, shareable fake mugshot today.">
+    <meta property="twitter:image" content="images/hero-bg.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <style>
+        /* Fix for orphan classes detected in review */
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .badge-container {
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+    </style>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Aimugshotcreator",
+      "description": "Ever wonder what you d look like in a mugshot? Our AI generator makes it easy. Upload a selfie and create a funny, shareable fake mugshot today.",
+      "applicationCategory": "DesignApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "mainEntity": {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the Mugshot Maker?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Mugshot Maker is an AI-powered image effect tool. It allows you to upload any portrait photo and our AI will automatically transform it to look like a realistic police mugshot, complete with the classic background and details."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much time does it take to get my mugshot image?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our AI is optimized for speed. Most results are generated within a few seconds."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the Mugshot Maker free to use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, it is free to try. Sign up and get free credits to generate images."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are my uploaded photos safe and private?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Your privacy is our top priority. All photos are processed securely and deleted after processing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What kind of photos work best?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Clear, front-facing portrait photos with good lighting work best."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need to install any software?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, it runs directly in your browser."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What format will my final image be in?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "High-quality JPEG file."
+            }
+          }
+        ]
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- CRT Overlay Effect -->
+    <div class="crt-overlay"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <span class="terminal-prompt">></span> Aimugshotcreator
+        </div>
+        <button class="menu-toggle" aria-label="Toggle Navigation">☰</button>
+        <nav>
+            <a href="#how-to-use" class="nav-link">Procedure</a>
+            <a href="#gallery" class="nav-link">Database</a>
+            <a href="#testimonials" class="nav-link">Witnesses</a>
+            <a href="#faq" class="nav-link">System Info</a>
+            <a href="#playground" class="btn btn-primary nav-cta">Start Booking</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg-animation">
+            <div class="grid-overlay"></div>
+            <div class="scan-line"></div>
+        </div>
+        <div class="hero-bg-image">
+            <img src="images/hero-bg.jpg" alt="Police lineup room background with height chart" loading="eager">
+        </div>
+        <div class="hero-content fade-in-up">
+            <div class="badge-container">
+                <span class="badge">SYSTEM STATUS: ONLINE</span>
+            </div>
+            <h1>AI Mugshot Maker</h1>
+            <p>Create a high-quality, fake mugshot online for free. Just upload a photo, and our AI mugshot creator will do the rest. Perfect for jokes and memes.</p>
+            <a href="#playground" class="btn btn-primary btn-large">INITIATE SCAN</a>
+        </div>
+    </section>
+
+    <!-- Playground Section -->
+    <section id="playground" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Processing Terminal</h2>
+                <p>Upload suspect photo for biometric conversion.</p>
+            </div>
+            
+            <div class="playground-grid">
+                <!-- Upload Zone -->
+                <div class="playground-card upload-card">
+                    <div class="card-header">
+                        <span class="icon">📥</span> INPUT SOURCE
+                    </div>
+                    <div id="upload-zone" class="upload-zone">
+                        <input type="file" id="file-input" accept="image/*" hidden>
+                        <div class="upload-content">
+                            <div class="upload-icon">⚡</div>
+                            <p>Drag & Drop or Click to Upload</p>
+                            <span class="file-info">Supports JPG, PNG, WEBP</span>
+                        </div>
+                        <img id="preview-image" class="hidden" alt="Uploaded preview">
+                    </div>
+                    <div class="actions">
+                        <button id="generate-btn" class="btn btn-primary full-width" disabled>APPLY EFFECT</button>
+                        <button id="reset-btn" class="btn btn-outline full-width hidden">RESET DATA</button>
+                    </div>
+                </div>
+
+                <!-- Result Zone -->
+                <div class="playground-card result-card">
+                    <div class="card-header">
+                        <span class="icon">📺</span> PROCESSED RECORD
+                    </div>
+                    <div id="result-container" class="result-display">
+                        <div id="loading-state" class="hidden">
+                            <div class="scanner-bar"></div>
+                            <p class="blink-text">PROCESSING BIOMETRICS...</p>
+                        </div>
+                        <div class="placeholder-content">
+                            <p>AWAITING INPUT...</p>
+                        </div>
+                        <img id="result-final" class="hidden" alt="Final mugshot result">
+                    </div>
+                    <div class="actions">
+                        <a id="download-btn" class="btn btn-secondary full-width disabled" href="#" download="mugshot-result.jpg">DOWNLOAD RECORD</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-to-use" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h3>Upload Photo</h3>
+                    <p>Select and upload photos from your device.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h3>Generate Image</h3>
+                    <p>Click the Apply Image Effect button.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h3>Download & Share</h3>
+                    <p>Download and share on social media.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Criminal Database</h2>
+                <p>Recent booking records generated by the system.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/gallery-result-1.jpg" alt="Police mugshot of a young man with ID placard" loading="lazy">
+                    <div class="gallery-overlay">RECORD #0422</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-result-2.jpg" alt="Police mugshot of a woman with ID placard" loading="lazy">
+                    <div class="gallery-overlay">RECORD #0423</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-result-3.jpg" alt="Police mugshot of a rugged older man with ID placard" loading="lazy">
+                    <div class="gallery-overlay">RECORD #0424</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>What People Say about us</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="quote">This tool is a lifesaver for my social media content!</p>
+                    <div class="author">
+                        <span class="name">Sophia</span>
+                        <span class="role">Content Creator</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="quote">I made hilarious mugshots for my entire family. So simple!</p>
+                    <div class="author">
+                        <span class="name">James</span>
+                        <span class="role">Web user from USA</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="quote">Simple tools that just work. Surprisingly versatile.</p>
+                    <div class="author">
+                        <span class="name">Chloe</span>
+                        <span class="role">Graphic Designer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">What is the Mugshot Maker?</button>
+                    <div class="faq-answer"><p>The Mugshot Maker is an AI-powered image effect tool. It allows you to upload any portrait photo and our AI will automatically transform it to look like a realistic police mugshot, complete with the classic background and details.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How much time does it take to get my mugshot image?</button>
+                    <div class="faq-answer"><p>Our AI is optimized for speed. Most results are generated within a few seconds.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Is the Mugshot Maker free to use?</button>
+                    <div class="faq-answer"><p>Yes, it is free to try. Sign up and get free credits to generate images.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Are my uploaded photos safe and private?</button>
+                    <div class="faq-answer"><p>Your privacy is our top priority. All photos are processed securely and deleted after processing.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What kind of photos work best?</button>
+                    <div class="faq-answer"><p>Clear, front-facing portrait photos with good lighting work best.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Do I need to install any software?</button>
+                    <div class="faq-answer"><p>No, it runs directly in your browser.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What format will my final image be in?</button>
+                    <div class="faq-answer"><p>High-quality JPEG file.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Aimugshotcreator</h3>
+                    <p>&copy; <span id="year"></span> Aimugshotcreator. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#" data-modal-target="privacy">Privacy Policy</a>
+                    <a href="#" data-modal-target="terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="privacy-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal" data-modal-close="privacy">&times;</span>
+            <div class="modal-body">
+                <h2>Privacy Policy</h2>
+                <p><strong>Last Updated:</strong> 2024</p>
+                <h4>1. Data Collection</h4>
+                <p>We collect only the minimum data necessary:</p>
+                <ul>
+                  <li>Images you upload for processing (temporarily stored)</li>
+                  <li>Basic usage analytics (non-personal)</li>
+                  <li>Browser type and device information</li>
+                </ul>
+                <h4>2. Image Processing</h4>
+                <p>Your uploaded images are:</p>
+                <ul>
+                  <li>Processed securely on our servers</li>
+                  <li>Automatically deleted within 24 hours</li>
+                  <li>Never shared with third parties</li>
+                  <li>Not used for AI training without consent</li>
+                </ul>
+                <h4>3. Data Security</h4>
+                <p>All data transmission is encrypted using SSL/TLS protocols.</p>
+                <h4>4. Cookies</h4>
+                <p>We use essential cookies only for site functionality.</p>
+                <h4>5. Your Rights</h4>
+                <p>You have the right to request deletion of any stored data.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="terms-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal" data-modal-close="terms">&times;</span>
+            <div class="modal-body">
+                <h2>Terms of Service</h2>
+                <p><strong>Last Updated:</strong> 2024</p>
+                <h4>1. Acceptance of Terms</h4>
+                <p>By using this service, you agree to these Terms.</p>
+                <h4>2. Service Description</h4>
+                <p>This service provides AI-powered image transformation. Provided "as-is" without warranties.</p>
+                <h4>3. Acceptable Use</h4>
+                <p>You agree NOT to upload:</p>
+                <ul>
+                  <li>Illegal or unlawful content</li>
+                  <li>Explicit, pornographic, or obscene material</li>
+                  <li>Content depicting violence or harm</li>
+                  <li>Images you do not have rights to use</li>
+                </ul>
+                <h4>4. Intellectual Property</h4>
+                <p>You retain full ownership of your original images. Generated effects are royalty-free for personal and commercial use.</p>
+                <h4>5. Limitation of Liability</h4>
+                <p>We are not liable for any damages arising from the use of this service.</p>
+                <h4>6. Modifications</h4>
+                <p>We may update these terms at any time. Continued use constitutes acceptance.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
